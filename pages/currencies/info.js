@@ -4,6 +4,7 @@ import solana from '../../assets/solana.png'
 import Usd from '../../assets/svg/usd'
 import CMCpriceConverter from '../../components/CMCpriceConverter'
 import Graph from '../../components/Graph'
+import Chat from '../../components/Chat'
 
 const styles = {
   activeTab: `p-1 px-2 mr-2 rounded-lg bg-[#171924]`,
@@ -32,7 +33,7 @@ const Currencies = () => {
     const urlParams = new URLSearchParams(queryString)
 
     setCoinName(urlParams.get('coin'))
-    setPrice(urlParams.get('price').toLocaleString())
+    setPrice(Number(urlParams.get('price')).toLocaleString())
     setCoinSymbol(urlParams.get('symbol'))
   }
 
@@ -93,7 +94,9 @@ const Currencies = () => {
             />
           </div>
 
-          <div className="ml-5 pt-10">{/* <Chat /> */}</div>
+          <div className="ml-5 pt-10">
+            <Chat />
+          </div>
         </div>
       </main>
     </div>
