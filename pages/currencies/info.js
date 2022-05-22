@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+import CMCpriceConverter from '../../components/CMCpriceConverter'
+
 import Header from '../../components/header'
 import solana from '../../assets/solana.png'
 import Usd from '../../assets/svg/usd'
-import CMCpriceConverter from '../../components/CMCpriceConverter'
-import Graph from '../../components/Graph'
-import Chat from '../../components/Chat'
+import { useEffect, useState } from 'react'
+import Graph from '../../components/graph'
+import Chat from '../../components/chat'
 
 const styles = {
   activeTab: `p-1 px-2 mr-2 rounded-lg bg-[#171924]`,
@@ -25,10 +26,10 @@ const Currencies = () => {
   const [price, setPrice] = useState('')
 
   useEffect(() => {
-    getURLData()
+    getData()
   }, [])
 
-  const getURLData = async () => {
+  const getData = async () => {
     const queryString = window.location.search
     const urlParams = new URLSearchParams(queryString)
 

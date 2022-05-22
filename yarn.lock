@@ -712,6 +712,11 @@
     "@ethersproject/properties" "^5.6.0"
     "@ethersproject/strings" "^5.6.0"
 
+"@faker-js/faker@^6.0.0-beta.0":
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-6.3.1.tgz#1ae963dd40405450a2945408cba553e1afa3e0fb"
+  integrity sha512-8YXBE2ZcU/pImVOHX7MWrSR/X5up7t6rPWZlk34RwZEcdr3ua6X+32pSd6XuOQRN+vbuvYNfA6iey8NbrjuMFQ==
+
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz#e5d2e450306a9491e3bd77e323e38d7aff315996"

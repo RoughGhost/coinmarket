@@ -11,6 +11,8 @@ import tera from '../assets/tera.png'
 import solana from '../assets/solana.png'
 import avalanche from '../assets/avalanche.png'
 import bnb from '../assets/bnb.png'
+import RateFilled from './buttons/RateFilled'
+import DropDownBtn from './buttons/DropDownBtn'
 
 const styles = {
   coinDetails: `min-h-screen text-white`,
@@ -197,7 +199,7 @@ const CoinDetails = ({ coinName, price, coinSymbol }) => {
                 </p>
                 <div className="my-3 flex">
                   <h1 className="text-4xl">{price}</h1>
-                  {/* <RateFilled /> */}
+                  <RateFilled />
                 </div>
                 <div className="flex items-start">
                   <p className="text-gray-400">15.26 ETH </p>
@@ -211,10 +213,10 @@ const CoinDetails = ({ coinName, price, coinSymbol }) => {
                 </div>
               </div>
               <div className="flex">
-                {/* <DropdownBtn label="Buy" />  */}
-                {/* <DropdownBtn label="Exchange" />  */}
-                {/* <DropdownBtn label="Gaming" />  */}
-                {/* <DropdownBtn label="Earn Crypto " />  */}
+                <DropDownBtn label="Buy" />
+                <DropDownBtn label="Exchange" />
+                <DropDownBtn label="Gaming" />
+                <DropDownBtn label="Earn Crypto " />
               </div>
             </div>
             <div className={styles.coinInfo}>
