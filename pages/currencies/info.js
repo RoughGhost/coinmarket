@@ -1,11 +1,11 @@
 import CMCpriceConverter from '../../components/CMCpriceConverter'
 
-import Header from '../../components/header'
+import Header from '../../components/Header'
 import solana from '../../assets/solana.png'
 import Usd from '../../assets/svg/usd'
 import { useEffect, useState } from 'react'
-import Graph from '../../components/graph'
-import Chat from '../../components/chat'
+import Graph from '../../components/Graph'
+import Chat from '../../components/Chat'
 
 const styles = {
   activeTab: `p-1 px-2 mr-2 rounded-lg bg-[#171924]`,
